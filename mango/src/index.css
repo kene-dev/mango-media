@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html,body{
+  background-color: #EEEEEE;
+  min-height: 100vh;
+  min-width: 100vw;
+  scroll-behavior: smooth;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.help{
+  background-image:url('./assets/help.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.active {
+  font-weight: 700;
+  color: #000;
+  border-bottom: 2px solid #FF6700;
+  /* transition: all .3s ease-in-out; */
+}
+
+.why {
+  position: relative;
+}
+
+.why::after {
+  content: '';
+  background: url('./assets/back.png');
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transform: skewY(5deg);
+}
+
